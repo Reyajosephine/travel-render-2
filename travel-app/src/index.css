@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=South+Mind&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@keyframes grow {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+
+.progress-bar {
+  animation: grow 2s ease-out forwards;
+}
